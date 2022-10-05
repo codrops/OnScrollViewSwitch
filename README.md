@@ -2,7 +2,7 @@
 
 A layout with some scroll animations and a view switch where the content items animate to a grid.
 
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
+![Image Title](https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2022/10/ScrollAnim_feat.jpg)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=65117)
 
