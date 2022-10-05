@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>On-Scroll Animations and View Switch | Codrops</title>
+		<meta name="description" content="A layout with some scroll animations and a view switch where the content items animate to a grid." />
+		<meta name="keywords" content="layout, gsap, javascript, switch, grid, smooth scrolling, lenis, flip plugin" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/eur8cof.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<div class="frame__title"> 
+					<h1 class="frame__title-main">On-Scroll Animations &amp; View Switch</h1> 
+					<a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p=65117"> 
+						<span class="oh__inner">Back to the article</span> 
+						<svg width="18px" height="18px" viewBox="0 0 24 24"><path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
+						</svg>
+					</a> 
+				</div>
+				<a class="frame__prev" href="http://tympanus.net/Development/MenuToGrid/">Previous demo</a>
+			</div>
+			<div class="heading">
+				<h2 class="heading__main">Projects * Insomnia * Projects * Insomnia * Projects * Insomnia * Projects</h2>
+				<span class="heading__sub">1984 - 2022</span>
+			</div>
+			<div class="switch">
+				<button class="unbutton switch__button switch__button--grid">
+					<svg width="18px" height="18px" viewBox="0 0 45 45">
+						<rect x="0" y="0" width="20" height="20"></rect>
+						<rect x="25" y="0" width="20" height="20"></rect>
+						<rect x="0" y="25" width="20" height="20"></rect>
+						<rect x="25" y="25" width="20" height="20"></rect>
+					</svg>
+				</button>
+				<button class="unbutton switch__button switch__button--list switch__button--current">
+					<svg width="18px" height="18px" viewBox="0 0 43 43">
+						<rect x="0" y="0" width="11" height="11"></rect>
+						<rect x="16" y="0" width="25" height="11"></rect>
+						<rect x="16" y="16" width="25" height="11"></rect>
+						<rect x="16" y="32" width="25" height="11"></rect>
+						<rect x="0" y="16" width="11" height="11"></rect>
+						<rect x="0" y="32" width="11" height="11"></rect>
+					</svg>
+				</button>
+			</div>
+			<div class="content">
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">01</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">Cast a spell</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/1.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">02</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">Corruption</span></h2>
+						<p class="item__caption-description">
+							In all energy exchanges, if no energy
+							Enters or leaves an isolated system
+							The entropy of that system increases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/2.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">03</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">All their lives</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/3.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">04</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">You'll burn in hell</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/4.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">05</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">What we become</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/5.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">06</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">Take a bow</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/6.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">07</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">You bring death</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/7.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">08</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">You must pay</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/8.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">09</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">Feed the hex</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/9.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">10</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">Beg for their lives</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/10.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">11</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">For all your sins</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/11.jpg)"></div></div></div>
+				</figure>
+				<figure class="item">
+					<figcaption class="item__caption">
+						<span class="item__caption-number oh"><span class="oh__inner">12</span></span>
+						<h2 class="item__caption-title oh"><span class="oh__inner">Beholden</span></h2>
+						<p class="item__caption-description">
+							All natural and technological processes
+							Proceed in such a way that the availability
+							Of the remaining energy decreases</p>
+					</figcaption>
+					<div class="item__image-wrap"><div class="item__image"><div class="item__image-inner" style="background-image:url(img/12.jpg)"></div></div></div>
+				</figure>
+			</div>
+			<div class="grid">
+			</div>
+		</main>
+		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+	</body>
+	<script type="module" src="js/index.js"></script>
+</html>
